@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: hsl(257, 40%, 49%) url(images/bg-desktop.svg) center/cover no-repeat fixed;
+	color: white;
+	padding: 25px 50px;
+	}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*min-width: 100vw;*/
+}
+
+.image-sec {
+	display: flex;
+	flex-direction: column;
+	margin-right: 40px;
+}
+
+.logo-img {
+	margin-bottom: 100px;
+}
+
+main {
+	width: 460px;
+}
+
+main h1 {
+	font-size: 2.5em;
+	margin-bottom: 0;
+}
+
+main p {
+	margin-bottom: 25px;
+}
+
+main button {
+	padding: 15px 50px;
+	color: hsl(257, 40%, 49%);
+	border-radius: 25px;
+	border-style: none;
+	background-color: white;
+	font-size: 1em;
+	font-weight: 400;
+	cursor: pointer;
+	box-shadow: 0 0 30px -10px black;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 125px;
+}
+
+.attribution {
+	margin: 0 auto;
+}
+
+.attribution a {
+	color: white;
+}
+
+.social-media-icons a{
+	margin-right: 20px;
+	padding: 15px;
+	border: 1px solid white;
+	border-radius: 40px;
+}
+
+.social-media-icons a i{
+	color: white;
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 995px) {
+	.main-content {
+		flex-direction: column;
+	} 
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 745px) {
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-media-icons {
+		margin-top: 50px;
+	}
+	main button {
+		padding: 15px 100px;
+	}
+	.illustration {
+		width: 450px;
+	}
+	.main-content {
+		margin-left: 50px;
+		margin-right: 25px;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.illustration {
+		width: 350px;
+	}
+	main {
+		text-align: center;
+		margin-right: 50px;
+		margin-left: 20px;
+		width: 350px;
+	}
+	main h1 {
+		font-size: 1.8em;
+	}
+	main p {
+		font-size: 1.15em;
+	}
+	footer p {
+		text-align: center;
+	}
+}
